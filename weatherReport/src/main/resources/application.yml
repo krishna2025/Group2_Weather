@@ -1,0 +1,13 @@
+server:
+    port: 9008
+    servlet:
+        context-path: /weatherService
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+queueName: city
+exchange: jsa.direct
+routingkey: jsa.routingkey
